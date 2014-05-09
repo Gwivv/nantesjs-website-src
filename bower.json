@@ -1,0 +1,15 @@
+{
+  "name": "nantesjs-website-src",
+  "version": "0.0.1",
+  "dependencies": {
+      "json3": "~3.2.6",
+      "es5-shim": "~2.1.0",
+      "pure":"~0.4.2",
+      "font-awesome":"~4.0.3",
+      "marked": "~0.3.2",
+      "highlight": "~7.0.1"
+  },
+  "devDependencies": {},
+  "appPath": "app",
+  "testPath": "test/client/spec"
+}

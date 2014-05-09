@@ -1,0 +1,70 @@
+body {
+    background-color: #F2F2F2;
+}
+
+.pure-skin-mine .pure-button.button-success,
+.pure-skin-mine .pure-button.button-error,
+.pure-skin-mine .pure-button.button-warning,
+.pure-skin-mine .pure-button.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pure-skin-mine .pure-button.button-success {
+    background: rgb(28, 184, 65);
+}
+
+.pure-skin-mine .pure-button.button-error {
+    background: rgb(202, 60, 60);
+}
+
+.pure-skin-mine .pure-button.button-warning {
+    background: rgb(223, 117, 20);
+}
+
+.pure-skin-mine .pure-button.button-secondary {
+    background: rgb(66, 184, 221);
+}
+
+.pure-skin-mine .text-success {
+    color: rgb(28, 184, 65);
+}
+
+.pure-skin-mine .text-error {
+    color: rgb(202, 60, 60);
+}
+
+.pure-skin-mine .text-warning {
+    color: rgb(223, 117, 20);
+}
+
+.pure-skin-mine .text-secondary {
+    color: rgb(66, 184, 221);
+}
+
+/* from PURE buttons-core.css */
+.pure-skin-mine .pure-button {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.pure-skin-mine .pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+/* end from PURE buttons-core.css */
+/* from PURE buttons.css */

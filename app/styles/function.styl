@@ -1,0 +1,18 @@
+overflow()
+  if arguments == 'ellipsis'
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+filter()
+  -ms-filter arguments
+  filter  arguments
+
+/**
+* Cross-browser gradient
+*/
+x-gradient(colorStart,colorEnd)
+  background-repeat no-repeat
+  background-color colorStart
+  background-image linear-gradient(top, colorStart, colorEnd)
+  filter unquote('progid:DXImageTransform.Microsoft.gradient(startColorstr='+colorStart+', endColorstr='+colorEnd+')')

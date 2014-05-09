@@ -1,0 +1,6 @@
+node_modules
+public
+.tmp
+app/bower_components
+/views
+dist
