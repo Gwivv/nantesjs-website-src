@@ -1,6 +1,12 @@
 Sources of nantesjs-website
 ===
 
+After npm install, bower install in project folder :
+
+ * To see and develop, just do 'grunt serve'.
+
+ * To generate distribution, just do 'grunt serve:dist'.
+
 # New version of NantesJS.org
 
 Demo is available here [http://gwivv.github.io/nantesjs-website/][1].
