@@ -258,6 +258,7 @@ module.exports = function (grunt) {
                         //'bower_components/**/LICENSE*',
                         //'bower_components/fonts/**/*',
                         'styles/pure/**/*',
+                        'doc/**/*',
                         'fonts/**/*',
                         'md/**/*',
                         '.git/**/*',
@@ -285,6 +286,7 @@ module.exports = function (grunt) {
                     src: [
                         'config.json',
                         'package.json',
+                        'bower.json',
                         'server.js',
                         'lib/**/*'
                     ]

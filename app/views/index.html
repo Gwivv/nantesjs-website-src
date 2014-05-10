@@ -1,20 +1,9 @@
-<!--[if gte IE 9]><!DOCTYPE html><![endif]-->
-<!--[if lte IE 8]><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><![endif]-->
-<!--[if !IE]>-->
 <!doctype html>
-<!--<![endif]-->
-<!--[if lt IE 7 ]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
 <html>
-<!--<![endif]-->
 <head>
     <!-- meta -->
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <!-- Fin des commentaires conditionnels à partir de IE 10+ -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache" />
@@ -334,6 +323,7 @@ marked(divToMarkdown.innerHTML, {
         NantesJS - Communauté Nantaise des Utilisateurs de JavaScript - By Gwivv
     </div>
 
+    <div id="scrollTop">Top</div>
 </div>
 
 <!-- Google Analytics -->
@@ -360,6 +350,13 @@ marked(divToMarkdown.innerHTML, {
 <!-- build:js(app) scripts/polyfill.js -->
 <script src="bower_components/es5-shim/es5-shim.js"></script>
 <script src="bower_components/es5-shim/es5-sham.js"></script>
+<!-- endbuild -->
+
+<!-- Respond JS -->
+<!-- build:js(app) scripts/respond.js -->
+<!--[if lt IE 9]>
+<script src="bower_components/respond/src/respond.js"></script>
+<![endif]-->
 <!-- endbuild -->
 
 <!-- Marked JS -->

@@ -20,6 +20,46 @@ marked(divToMarkdown.innerHTML, {
     divToMarkdown.innerHTML = content;
 });
 
+document.getElementById("scrollTop").onclick = function () {
+    scrollTo(document,"top",1000);
+};
+
+// scroll top function without jQuery
+function scrollTo(doc, direction, duration) {
+    var element, to;
+    if (direction == "top") {
+        if (doc.documentElement && (doc.documentElement.clientWidth || doc.documentElement.clientHeight) && !doc.body.scrollTop)
+            element = doc.documentElement;
+        else
+            element = doc.body;
+        to = 0;
+    } else {
+        if (doc.documentElement && !doc.documentElement.scrollTop && !doc.body.scrollTop) {
+            doc.documentElement.scrollTop = 1;
+            if (doc.documentElement.scrollTop == 1) {
+                element = doc.documentElement;
+            } else {
+                element = doc.body;
+            }
+        } else {
+            element = doc.body;
+        }
+        to = element.scrollHeight;
+    }
+    return _scrollTo(element, to, duration);
+
+    function _scrollTo (element, to, duration) {
+        if (duration <= 0) return;
+        var difference = to - element.scrollTop;
+        var perTick = (difference / duration) * 10;
+        setTimeout(function() {
+            element.scrollTop = element.scrollTop + perTick;
+            if (element.scrollTop == to) return;
+            _scrollTo(element, to, duration - 10);
+        }, 10);
+    }
+}
+
 // facebook
 (function ScopeLike(d, s, id) {
     var
