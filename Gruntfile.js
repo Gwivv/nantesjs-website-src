@@ -254,15 +254,10 @@ module.exports = function (grunt) {
                         '.htaccess',
                         '*.{ico,png,txt}',
                         'images/{,*/}*.{webp}',
-                        //'bower_components/**/license*',
-                        //'bower_components/**/LICENSE*',
-                        //'bower_components/fonts/**/*',
                         'styles/pure/**/*',
                         'doc/**/*',
                         'fonts/**/*',
                         'md/**/*',
-                        '.git/**/*',
-                        '.gitignore',
                         'README.md',
                         'CNAME'
                     ]
