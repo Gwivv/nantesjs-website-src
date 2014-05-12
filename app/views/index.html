@@ -257,39 +257,40 @@
         </div>
     </div>
 
-    <div class="ribbon pure-g">
+    <div class="ribbon">
         <h2 class="content-head content-head-ribbon">Markdown Javascript.</h2>
 
-        <div id="idDivSrc" class="l-box-lrg pure-u-1 pure-u-med-1-2 text-left">
-            NantesJS
-            ===
+        <div class="pure-g">
+            <div id="idDivSrc" class="l-box-lrg pure-u-med-1-2 text-left">
+                NantesJS
+                ===
 
-            * Article rédigé en markdown en utilisant 2 projets javascripts au top [**marked**][1] et [**highlight**][2].
+                * Article rédigé en markdown en utilisant 2 projets javascripts au top [**marked**][1] et [**highlight**][2].
 
-            * L'utilisation est super simple :
+                * L'utilisation est super simple :
 
-            ```javascript
-            // Pour changer de préfix de class
-            hljs.configure({classPrefix: ''});
+                ```javascript
+                // Pour changer de préfix de class
+                hljs.configure({classPrefix: ''});
 
-            // Utilisation de marked combiné à highlight
-            var divToMarkdown = document.getElementById("idDivToMarkdown");
+                // Utilisation de marked combiné à highlight
+                var divToMarkdown = document.getElementById("idDivToMarkdown");
 
-            marked(divToMarkdown.innerHTML, {
-            highlight: function (code) {
-            return hljs.highlightAuto(code).value;
-            }
-            }, function (err, content) {
-            if (err) throw err;
-            divToMarkdown.innerHTML = content;
-            });
-            ```
+                marked(divToMarkdown.innerHTML, {
+                highlight: function (code) {
+                return hljs.highlightAuto(code).value;
+                }
+                }, function (err, content) {
+                if (err) throw err;
+                divToMarkdown.innerHTML = content;
+                });
+                ```
 
-            [1]:https://github.com/chjj/marked
-            [2]:https://github.com/isagalaev/highlight.js
-        </div>
+                [1]:https://github.com/chjj/marked
+                [2]:https://github.com/isagalaev/highlight.js
+            </div>
 
-        <div id="idDivToMarkdown" class="l-box-lrg pure-u-1 pure-u-med-1-2 text-left code">
+            <div id="idDivToMarkdown" class="l-box-lrg pure-u-med-1-2 text-left code">
 NantesJS
 ===
 
@@ -300,10 +301,8 @@ NantesJS
 ```javascript
 // Pour changer de préfix de class
 hljs.configure({classPrefix: ''});
-
 // Utilisation de marked combiné à highlight
 var divToMarkdown = document.getElementById("idDivToMarkdown");
-
 marked(divToMarkdown.innerHTML, {
     highlight: function (code) {
         return hljs.highlightAuto(code).value;
@@ -316,6 +315,7 @@ marked(divToMarkdown.innerHTML, {
 
  [1]:https://github.com/chjj/marked
  [2]:https://github.com/isagalaev/highlight.js
+            </div>
         </div>
     </div>
 
@@ -361,7 +361,7 @@ marked(divToMarkdown.innerHTML, {
 
 <!-- Marked JS -->
 <!-- build:js(app) scripts/marked.js -->
-<script src="bower_components/marked/marked.js"></script>
+<script src="bower_components/marked/lib/marked.js"></script>
 <script src="bower_components/highlightjs/highlight.pack.js"></script>
 <!-- endbuild -->
 

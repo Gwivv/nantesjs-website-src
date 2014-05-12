@@ -1,7 +1,4 @@
 // markdown
-// Pour changer de préfix de class
-hljs.configure({classPrefix: ''});
-
 // formatté
 var divSrc = document.getElementById("idDivSrc");
 marked(divSrc.innerHTML, {}, function (err, content) {
