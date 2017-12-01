@@ -12,7 +12,7 @@
     "express": "~3.5.2",
     "lodash": "~2.4.1",
     "connect": "~2.15.0",
-    "ejs": "~0.8.5",
+    "ejs": "~2.5.5",
     "ejs-locals": "~1"
   },
   "devDependencies": {
